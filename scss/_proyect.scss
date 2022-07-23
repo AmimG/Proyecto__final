@@ -45,7 +45,6 @@
           font-family: $generalfonts;
           color: map-get($map:$color, $key:'black', );
 
-
           &:hover {
             color: map-get($map:$color, $key:'blue', );
             transition: 300ms;
@@ -76,7 +75,7 @@
 
       .dis-2 {
         display: flex;
-        width: auto;
+        width: ($ptj - 60);
 
         a {
           margin-inline: ($px - 485);
@@ -113,59 +112,6 @@
         }
       }
 
-      .dis-2 {
-        a {
-          width: ($px - 478);
-        }
-      }
-    }
-  }
-
-  .g-nav {
-    background: linear-gradient(to right, map-get($map:$bg, $key:'red-1', ), map-get($map:$bg, $key:'red-2', ), map-get($map:$bg, $key:'red-3', ));
-
-    a {
-      h1 {
-        color: map-get($map:$color, $key:'white', );
-        text-shadow: ($px - 499) ($px - 499) map-get($map: $color, $key:'black');
-        -webkit-text-shadow: ($px - 499) ($px - 499) map-get($map: $color, $key:'black');
-
-        &:hover {
-          color: map-get($map:$color, $key:'red-trans', );
-          transition: 300ms;
-        }
-      }
-    }
-
-    .dis {
-      li {
-        a {
-          font-size: ($txtg - .5);
-          font-family: $generalfonts;
-          color: map-get($map:$color, $key:'white', );
-
-          &:hover {
-            color: map-get($map:$color, $key:'red-trans', );
-            transition: 300ms;
-          }
-        }
-      }
-    }
-
-    @media (max-width: 480px) {
-      a {
-        h1 {
-          font-size: ($txtg - .4);
-        }
-      }
-    }
-
-    @media (max-width: 300px) {
-      a {
-        h1 {
-          font-size: ($txtg - .8);
-        }
-      }
     }
   }
 
@@ -198,8 +144,7 @@
 
           &:hover {
             color: map-get($map: $color, $key: 'gy');
-            transition: 500ms;
-            font-weight: 500;
+            transition: 300ms;
           }
         }
       }
@@ -484,7 +429,7 @@
 
               input {
                 margin-top: ($px - 497.2);
-                margin-bottom: ($px - $px);
+                margin-bottom: ($px - 500);
                 border-radius: ($px - 495);
                 box-shadow: ($px - 497) ($px - 497) map-get($map: $color, $key: 'black');
                 -webkit-box-shadow: ($px - 497) ($px - 497) map-get($map: $color, $key: 'black');
@@ -492,7 +437,7 @@
               }
 
               label {
-                margin-bottom: ($px - $px);
+                margin-bottom: ($px - 500);
               }
             }
           }
@@ -631,6 +576,25 @@
     }
   }
 
+  .cartel {
+    position: absolute;
+    top: ($px - 500);
+    left: ($px - 500);
+    background-color: map-get($map: $bg, $key: 'blue');
+    min-width: ($px - 360);
+    max-width: ($px - 360);
+    border-radius: ($px - 490) ($px - 500) ($px - 500) ($px - 500);
+    display: flex;
+
+    span {
+      color: map-get($map: $color, $key: 'white');
+      font-size: ($txtg - .5);
+      font-weight: 550;
+      text-align: justify;
+      margin-inline: auto;
+    }
+  }
+
   .bg__main {
     @include flex-column(column, center);
     width: $ptj;
@@ -653,29 +617,37 @@
     }
 
     @media (max-width: 768px) {
-      .section__index h2 {
-        font-size: ($txtg - .2);
-        width: auto;
-        text-align: center;
+      .section__index {
+        h2 {
+          font-size: ($txtg - .2);
+          width: auto;
+          text-align: center;
+        }
       }
     }
 
     @media (max-width: 430px) {
-      .section__index h2 {
-        font-size: ($txtg);
-        margin-bottom: ($px - 495);
+      .section__index {
+        h2 {
+          font-size: ($txtg);
+          margin-bottom: ($px - 495);
+        }
       }
     }
 
     @media (max-width: 320px) {
-      .section__index h2 {
-        font-size: ($txtg - .4);
+      .section__index {
+        h2 {
+          font-size: ($txtg - .4);
+        }
       }
     }
 
     @media (max-width: 300px) {
-      .section__index h2 {
-        font-size: ($txtg - .6);
+      .section__index {
+        h2 {
+          font-size: ($txtg - .6);
+        }
       }
     }
 
@@ -692,12 +664,14 @@
       @include flex-column(row, center);
       background-color: map-get($map: $bg, $key: 'black-trans');
       border-radius: ($px - 490);
-      border: map-get($map: $color, $key: 'gy') solid ($px - 499.90);
+      border: map-get($map: $color, $key: 'white-trans-2') solid ($px - 499);
 
       .card__div {
         width: ($ptj - 40);
+        position: relative;
 
         img {
+          background-size: cover;
           width: $ptj;
           border-radius: ($px - 490) ($px - 500) ($px - 500) ($px - 490);
 
@@ -710,98 +684,72 @@
       }
 
       .card-body {
-        padding: ($px - 465);
+        padding: ($px - 480) ($px - 462) ($px - 480) ($px - 480);
         width: ($ptj - 60);
+        height: $ptj;
         @include flex-column(column, center);
         justify-content: center;
 
         a {
           color: map-get($map: $color, $key: 'white');
-          font-size: $txtg;
+          font-size: ($txtg - .1);
           text-decoration: none;
+          margin-top: ($px - 480);
           text-align: justify;
-          margin-bottom: auto;
+          font-weight: 300;
 
           &:hover {
             color: map-get($map: $color, $key: 'gy');
-            font-weight: 500;
-            transition-delay: 150ms;
+            transition-delay: 300ms;
           }
         }
 
         h3 {
           color: map-get($map: $color, $key: 'white');
-          text-align: justify;
           margin-bottom: auto;
+          font-weight: 600;
+          text-align: justify;
 
           &:hover {
             color: map-get($map: $color, $key: 'gy');
-            font-weight: 500;
-            transition-delay: 150ms;
+            transition-delay: 300ms;
           }
+        }
+
+        span {
+          color: map-get($map: $color, $key: 'white');
+          font-size: ($txtg - .5);
+          margin-top: ($px - 480);
+          text-align: justify;
+          font-weight: 100;
         }
       }
     }
 
     .carousel-control-next,
     .carousel-control-prev {
-      width: ($ptj - 95);
+      width: ($ptj - 98);
     }
 
     @media (max-width: 1170px) {
-      .card .card-body a {
-        font-size: ($txtg - .2);
-      }
-
-      .card .card-body h3 {
-        font-size: $txtg;
+      .card {
+        .card-body {
+          a {
+            font-size: ($txtg - .2);
+          }
+        }
       }
     }
 
     @media (max-width: 991px) {
-      .card .card__div {
-        width: ($ptj - 40);
-      }
-
-      .card .card-body {
-        padding: ($px - 470);
-      }
-    }
-
-    @media (max-width: 850px) {
-      .card .card-body a {
-        font-size: ($txtg - .4);
-      }
-
-      .card .card-body h3 {
-        font-size: ($txtg - .2);
-      }
-    }
-
-    @media (max-width: 785px) {
-      .card .card-body {
-        padding: ($px - 500);
-        padding-inline: ($px - 480);
-      }
-    }
-
-    @media (max-width: 768px) {
       .card {
-        @include flex-column(column, center);
-
         .card__div {
-          width: $ptj;
-
-          img {
-            width: $ptj;
-            border-radius: ($px - 490);
-          }
+          width: ($ptj - 40);
         }
 
         .card-body {
-          padding: ($px - 495);
-          width: $ptj;
-          height: ($px - 380);
+          padding: ($px - 500);
+          padding-inline: ($px - 495) ($px - 485);
 
           a {
             font-size: ($txtg - .4);
@@ -814,18 +762,76 @@
       }
     }
 
-    @media (max-width: 585px) {
+    @media (max-width: 768px) {
+      .card {
+        @include flex-column(column, center);
+
+        .card__div {
+          width: $ptj;
+
+          img {
+            width: $ptj;
+            border-radius: ($px - 490) ($px - 490) ($px - 500) ($px - 500);
+          }
+        }
+
+        .card-body {
+          padding: ($px - 495);
+          width: $ptj;
+          min-height: ($px - 320);
+
+          a {
+            font-size: ($txtg - .2);
+            margin-top: ($px - 500);
+          }
+
+          h3 {
+            font-size: $txth3;
+            margin-bottom: ($px - 480);
+          }
+        }
+      }
 
       .carousel-control-next,
       .carousel-control-prev {
+        width: ($ptj - 95);
         height: ($ptj - 30);
       }
     }
 
-    @media (max-width: 430px) {
+    @media (max-width: 585px) {
+      .container__carrousel {
+        width: $ptj;
+      }
+
       .card {
+
         .card-body {
           a {
+            font-size: ($txtg - .5);
+            margin-top: ($px - 500);
+          }
+
+          h3 {
+            font-size: $txtg;
+            margin-bottom: ($px - 480);
+          }
+        }
+      }
+
+      .carousel-control-next,
+      .carousel-control-prev {
+        width: ($ptj - 90);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        .card-body {
+          min-height: ($px - 360);
+
+          a,
+          span {
             font-size: ($txtg - .6);
           }
 
@@ -836,21 +842,49 @@
       }
     }
 
-    @media (max-width: 400px) {
-      .card .card-body {
-        height: ($px - 400);
-      }
-    }
-
-    @media (max-width: 330px) {
+    @media (max-width: 380px) {
       .card {
+        .card__div {
+          .cartel {
+            min-width: ($px - 370);
+            max-width: ($px - 370);
+
+            span {
+              font-size: ($txtg - .8);
+            }
+          }
+        }
+
         .card-body {
-          a {
+          min-height: ($px - 340);
+
+          a,
+          span {
             font-size: ($txtg - .8);
           }
 
           h3 {
             font-size: ($txtg - .6);
+          }
+        }
+      }
+    }
+
+    @media (max-width: 300px) {
+      .card {
+        .card-body {
+          min-height: ($px - 420);
+
+          h3 {
+            margin-bottom: ($px - 498);
+          }
+
+          .n {
+            display: none;
+          }
+
+          span {
+            margin-top: ($px - 495);
           }
         }
       }
@@ -868,52 +902,71 @@
         margin-bottom: auto;
 
         .div__cont {
-          width: ($ptj - 55);
+          width: ($ptj - 52);
 
-          img {
+          .div__img {
             width: $ptj;
-            border-radius: ($px - 490);
-            border: map-get($map: $color, $key: 'gy') solid ($px - 499.90);
+            position: relative;
 
-            &:hover {
-              transform: scale(0.985, 0.985);
-              transition: 500ms;
-              cursor: pointer;
+            img {
+              width: $ptj;
+              border-radius: ($px - 490);
+              border: map-get($map: $color, $key: 'white-trans-2') solid ($px - 499);
+
+              &:hover {
+                transform: scale(0.985, 0.985);
+                transition: 500ms;
+                cursor: pointer;
+              }
+            }
+
+            .cartel {
+              min-width: ($px - 400);
+              max-width: ($px - 400);
+              display: flex;
+
+              span {
+                font-size: ($txtg - .8);
+                margin-inline: auto;
+              }
             }
           }
-        }
 
-        .a {
-          margin-top: ($px - 492);
-          width: auto;
+          .a {
+            margin-top: ($px - 495);
+            width: auto;
+            height: ($px - 430);
+            @include flex-column (column, center);
 
-          a {
-            color: map-get($map: $color, $key: 'white');
-            text-decoration: none;
-            font-size: ($txtg - .2);
-            line-height: auto;
-            width: $ptj;
+            a {
+              margin-top: ($px - 498);
+              color: map-get($map: $color, $key: 'white');
+              text-decoration: none;
+              font-size: ($txtg - .5);
+              width: $ptj;
+              font-weight: 600;
 
-            @supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
-              text-align: justify;
-              -webkit-hyphens: auto;
-              hyphens: auto;
+              &:hover {
+                color: map-get($map: $color, $key: 'gy');
+                transition-delay: 300ms;
+              }
             }
 
-            &:hover {
-              color: map-get($map: $color, $key: 'gy');
-              font-weight: 500;
-              transition-delay: 300ms;
+            .report {
+              margin-top: auto;
+              color: map-get($map: $color, $key: 'white');
+              font-size: ($txtg - .8);
+              font-weight: 300;
             }
           }
         }
       }
 
-      @media (max-width: 1330px) {
+      @media (max-width: 1270px) {
         .div__ner {
-          .a {
-            a {
-              font-size: ($txtg - .4);
+          .div__cont {
+            .a {
+              height: ($px - 410);
             }
           }
         }
@@ -936,17 +989,20 @@
           width: $ptj;
           margin-bottom: ($px - 495);
 
-          .a {
-            margin-top: ($px - 495);
-            width: auto;
+          .div__cont {
+            .a {
+              margin-top: ($px - 495);
+              width: auto;
+              height: ($px - 410);
 
-            a {
-              font-size: $txtg;
+              a {
+                font-size: $txtg;
+              }
             }
           }
+
         }
       }
-
 
       @media (max-width: 730px) {
         .div__ner {
@@ -969,6 +1025,7 @@
       }
 
       @media (max-width: 585px) {
+        width: $ptj;
         @include flex-column(column, center);
 
         .div__ner {
@@ -981,11 +1038,12 @@
             border-bottom: map-get($map: $color, $key: 'white-trans') ($px - 499.99) solid;
 
             .div__img {
-              max-width: ($ptj - 60);
+              max-width: ($ptj - 45);
             }
 
             .a {
-              width: ($ptj - 45);
+              width: ($ptj - 55);
+              height: auto;
               margin-inline: ($px - 495);
               margin-top: ($px - 500);
               align-self: center;
@@ -1115,7 +1173,7 @@
           .card-body {
             width: ($ptj - 55);
             padding: ($px - 495);
-            min-height: ($px - $px);
+            min-height: ($px - 500);
 
             a {
               font-size: ($txtg - .5);
@@ -1184,6 +1242,88 @@
       }
     }
 
+    .card__section {
+      .fut {
+        width: $ptj;
+        @include flex-column(row, center);
+
+        .card__div {
+          width: ($ptj - 40);
+        }
+
+        .card-body {
+          width: ($ptj - 60);
+        }
+      }
+
+      @media (max-width: 800px) {
+        .fut {
+          @include flex-column(column, center);
+          margin-block: ($px - 490);
+
+          .card__div {
+            width: $ptj;
+
+            img {
+              width: $ptj;
+              border-radius: ($px - 490) ($px - 490) ($px - 500) ($px - 500);
+            }
+          }
+
+          .card-body {
+            width: $ptj;
+            padding: ($px - 495);
+            min-height: ($px - 330);
+
+            a {
+              font-size: ($txtg - .5);
+            }
+          }
+        }
+      }
+
+      @media (max-width: 585px) {
+        width: $ptj;
+
+        .fut {
+          width: $ptj;
+
+          .card-body {
+            a {
+              font-size: ($txtg - .8);
+            }
+          }
+        }
+      }
+
+      @media (max-width: 380px) {
+        width: $ptj;
+
+        .fut {
+          .card__div {
+            .cartel {
+              min-width: ($px - 320);
+              max-width: ($px - 320);
+            }
+          }
+
+          .card-body {
+            max-height: ($px - 370);
+            min-height: ($px - 370);
+          }
+        }
+      }
+
+      @media (max-width: 300px) {
+        .fut {
+          .card-body {
+            max-height: ($px - 420);
+            min-height: ($px - 420);
+          }
+        }
+      }
+    }
+
     .container__section {
       .div__ner {
         @include flex(space-between, center);
@@ -1201,7 +1341,7 @@
               width: $ptj;
               height: ($px - 185);
               border-radius: ($px - 490);
-              border: map-get($map: $color, $key: 'gy') solid ($px - 499.90);
+              border: map-get($map: $color, $key: 'white-trans-2') solid ($px - 499.90);
             }
           }
 
@@ -1214,6 +1354,7 @@
               font-size: ($txtg - .8);
               line-height: auto;
               width: $ptj;
+              text-align: justify;
             }
 
             p {
@@ -1221,12 +1362,7 @@
               font-size: ($txtg - .2);
               line-height: auto;
               width: $ptj;
-            }
-
-            @supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
               text-align: justify;
-              -webkit-hyphens: auto;
-              hyphens: auto;
             }
           }
         }
@@ -1407,17 +1543,20 @@
       width: ($ptj - 50);
 
       h2 {
-        font-family: $titlefonts;
         align-self: center;
         width: $ptj;
         margin-bottom: ($px - 495);
         font-size: ($txth2 - .5);
+        text-align: justify;
+        font-weight: 600;
       }
 
       span {
         color: map-get($map: $color, $key: 'gy');
         font-size: ($txtg - .5);
         margin-bottom: ($px - 490);
+        text-align: justify;
+        font-weight: 600;
       }
 
       .news {
@@ -1428,6 +1567,13 @@
 
           img {
             width: $ptj;
+            border-radius: ($px - 490);
+          }
+
+          span {
+            color: map-get($map: $color, $key: 'white');
+            font-size: ($txtg - .8);
+            font-weight: 300;
           }
         }
       }
@@ -1437,45 +1583,66 @@
 
         h3 {
           color: map-get($map: $color, $key: 'gy');
-          font-family: $titlefonts;
           margin-bottom: ($px - 495);
           font-size: $txtg;
+          text-align: justify;
+          font-weight: 600;
         }
 
         p {
           color: map-get($map: $color, $key: 'white');
           font-size: ($txtg - .2);
+          text-align: justify;
         }
       }
 
-      @supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
-        text-align: justify;
-        -webkit-hyphens: auto;
-        hyphens: auto;
+      .div__iframe {
+        max-width: $ptj;
+
+        iframe {
+          width: $ptj;
+          height: $px;
+          border-radius: ($px - 490);
+        }
+
+        span {
+          color: map-get($map: $color, $key: 'white');
+          font-size: ($txtg - .8);
+          font-weight: 300;
+        }
+
+        .twitter-tweet {
+          margin-top: ($px - 500);
+          margin-bottom: ($px - 500);
+          margin-inline: auto;
+        }
       }
 
       @media (max-width: 1100px) {
         width: ($ptj - 40);
+
       }
 
-      @media (max-width: 870px) {
+      @media (max-width: 991px) {
         width: ($ptj - 30);
       }
 
       @media (max-width: 768px) {
         width: ($ptj - 20);
 
-        h2 {
-          text-align: justify;
+        .div__iframe {
+          iframe {
+            height: ($px - 180);
+          }
         }
       }
 
       @media (max-width: 650px) {
-        width: ($ptj - 10);
+        width: ($ptj - 5);
       }
 
       @media (max-width: 585px) {
-        width: ($ptj - 5);
+        width: ($ptj - 2);
 
         h2 {
           font-size: $txtg;
@@ -1492,9 +1659,15 @@
         }
       }
 
-      @media (max-width: 420px) {
-        width: ($ptj - 2);
+      @media (max-width: 480px) {
+        .div__iframe {
+          iframe {
+            height: ($px - 250);
+          }
+        }
+      }
 
+      @media (max-width: 420px) {
         h2 {
           font-size: ($txtg - .4);
         }
@@ -1505,14 +1678,6 @@
 
         .news_txt {
           margin-block: ($px - 490);
-
-          h3 {
-            font-size: ($txtg - .6);
-          }
-
-          p {
-            font-size: ($txtg - .7);
-          }
         }
       }
 
@@ -1521,144 +1686,140 @@
           font-size: ($txtg - .5);
         }
 
-        span {
-          font-size: ($txtg - 1);
-        }
-
-        .news_txt {
-          h3 {
-            font-size: ($txtg - .8);
+        .div__iframe {
+          iframe {
+            height: ($px - 300);
           }
 
-          p {
-            font-size: ($txtg - .9);
+          .twitter-tweet {
+            position: static;
+            visibility: visible;
+            width: auto;
+            height: auto;
+            display: block;
+            flex-grow: 1;
           }
         }
       }
 
       @media (max-width: 330px) {
-        h2 {
-          font-size: ($txtg - .8);
+        .tw {
+          display: none;
         }
+      }
 
-        span {
-          font-size: ($txtg - 1);
-        }
-
-        .news_txt {
-          h3 {
-            font-size: ($txtg - 1);
-          }
-
-          p {
-            font-size: ($txtg - 1);
+      @media (max-width: 300px) {
+        .div__iframe {
+          iframe {
+            height: ($px - 350);
           }
         }
       }
     }
   }
 
-  .g-main {
-    .bg__head {
-      background: none;
+  aside {
+    width: $ptj;
+    background-color: map-get($map: $bg, $key: 'grey-trans');
+    margin-bottom: ($px - 480);
+    @include flex-column(column, center);
+
+    h3 {
+      width: $ptj;
+      font-size: ($txtg - .6);
+      color: map-get($map: $color, $key: 'gy');
+      text-align: justify;
+      font-family: $titlefonts;
+      margin-top: ($px - 495);
     }
 
-    .bg__main {
-      .section__index {
-        h2 {
-          text-align: center;
-          width: $ptj;
-          color: map-get($map: $color, $key: 'black');
-        }
-      }
+    .aside {
+      width: ($ptj - 50);
+      @include flex(space-between, center);
+      flex-wrap: wrap;
 
-      .card__section {
-        .card {
-          background-color: map-get($map: $bg, $key: 'black-e');
-          border: ($px - 498) solid map-get($map: $bg, $key: 'red-3');
+      .div__aside {
+        width: ($ptj - 52);
+        margin-block: ($px - 490);
+        position: relative;
 
-          .card-body {
-
-            a,
-            h3 {
-              &:hover {
-                color: map-get($map: $color, $key: 'yellow');
-              }
-            }
-          }
-        }
-      }
-
-      .section__index-w {
-        background-color: map-get($map: $bg, $key: 'black-e');
-
-        h2 {
-          color: map-get($map: $color, $key: 'white');
-        }
-
-        .container__section {
-          .div__ner {
-
-            .div__cont {
-              width: ($ptj - 52);
-
-              .div__img {
-                iframe {
-                  border: map-get($map: $bg, $key: 'white-e') solid ($px - 499.90);
-                }
-              }
-
-              .a {
-                margin-top: ($px - 492);
-                width: auto;
-
-                p {
-                  color: map-get($map: $color, $key: 'red');
-                }
-
-                @supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
-                  text-align: justify;
-                  -webkit-hyphens: auto;
-                  hyphens: auto;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .section__index-b {
-        background-color: map-get($map: $bg, $key: 'white-e');
-        border-bottom: none;
-      }
-
-      .container__2 {
-        .div__ner {
+        a {
           width: $ptj;
 
-          .div__cont {
-            width: ($ptj - 52);
-
-            img {
-              border: ($px - 498) solid map-get($map: $bg, $key: 'red-3');
-            }
+          img {
+            width: $ptj;
+            border-radius: ($px - 490);
           }
+        }
 
-          .a {
-            a {
-              color: map-get($map: $color, $key: 'black');
+        .cartel2 {
+          position: absolute;
+          left: ($px - 500);
+          bottom: ($px - 500);
+          width: $ptj;
+          background-color: map-get($map: $bg, $key: 'black-trans-2');
+          border-radius: ($px - 500) ($px - 500) ($px - 490) ($px - 490);
+          display: flex;
+
+          a {
+            text-decoration: none;
+            color: map-get($map: $color, $key: 'white');
+            line-height: ($px - 488);
+            min-height: ($px - 440);
+            max-height: ($px - 440);
+            display: flex;
+            padding: ($px - 495);
+
+            span {
+              font-size: ($txtg - .6);
+              margin-block: auto;
+              text-align: justify;
+              min-width: $ptj;
+
             }
 
             &:hover {
-              color: map-get($map: $color, $key: 'red');
+              color: map-get($map: $color, $key: 'blue');
             }
           }
         }
       }
 
+      @media (max-width: 1100px) {
+        width: ($ptj - 40);
+      }
+
+      @media (max-width: 991px) {
+        width: ($ptj - 30);
+      }
+
+      @media (max-width: 768px) {
+        width: ($ptj - 20);
+        @include flex-column(column, center);
+
+        .div__aside {
+          width: $ptj;
+
+          a {
+            button {
+              width: $ptj;
+              min-height: ($px - 420);
+              max-height: ($px - 420);
+              border-radius: ($px - 460);
+            }
+          }
+        }
+      }
+
+      @media (max-width: 650px) {
+        width: ($ptj - 5);
+      }
+
+      @media (max-width: 585px) {
+        width: ($ptj - 2);
+      }
     }
   }
-
 
   .ctc__redes {
     width: $ptj;
@@ -1714,20 +1875,16 @@
         @include flex-column(column, center);
         justify-content: center;
 
-        @supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
-          text-align: justify;
-          -webkit-hyphens: auto;
-          hyphens: auto;
-        }
-
         h3 {
           font-family: $titlefonts;
           color: map-get($map: $color, $key: 'white');
           font-size: ($txtg + .2);
+          text-align: justify;
         }
 
         p {
           color: map-get($map: $color, $key: 'white');
+          text-align: justify;
         }
 
         .button__error {
@@ -1933,8 +2090,6 @@
       }
     }
   }
-
-
 
   .section__index-w {
     @extend .section__index;
@@ -2171,12 +2326,7 @@
           color: map-get($map: $color, $key: 'white');
           align-self: center;
           font-size: $txtg;
-
-          @supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
-            text-align: justify;
-            -webkit-hyphens: auto;
-            hyphens: auto;
-          }
+          text-align: justify;
         }
       }
 
@@ -2308,6 +2458,7 @@
     }
   }
 
+
   // footer general
   .footer {
     @include flex(space-evenly, center);
@@ -2318,7 +2469,7 @@
     font-size: ($txtg - 0.6);
     color: map-get($map: $color, $key: 'white');
     overflow-x: hidden;
-    background-color: map-get($map: $bg, $key: 'grey-main');
+    background-color: map-get($map: $bg, $key: 'black-foot');
     width: $ptj;
 
     h4 {
@@ -2342,10 +2493,8 @@
           font-size: ($txth2 + .5);
           height: ($px - 455);
           margin-block: auto;
-          color: map-get($map: $color, $key: 'green-shadow');
+          color: map-get($map: $color, $key: 'gy');
           font-family: $titlefonts;
-          text-shadow: ($px - 499) ($px - 499) map-get($map: $color, $key: 'gy');
-          -webkit-text-shadow: ($px - 499) ($px - 499) map-get($map: $color, $key: 'gy');
         }
 
         .span_ {
@@ -2411,8 +2560,7 @@
 
             &:hover {
               color: map-get($map: $color, $key: 'yellow');
-              font-weight: 500;
-              transition-delay: 250ms;
+              transition-delay: 300ms;
             }
           }
         }
@@ -2430,12 +2578,7 @@
 
         span {
           font-size: ($txtg - 0.6);
-
-          @supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
-            text-align: justify;
-            -webkit-hyphens: auto;
-            hyphens: auto;
-          }
+          text-align: justify;
         }
       }
     }
@@ -2468,7 +2611,6 @@
         grid-area: addrs;
         width: $ptj;
         height: $ptj;
-        border-right: map-get($map: $color, $key: 'gy') solid ($px - 499);
       }
 
       .footer__redes {
@@ -2477,7 +2619,6 @@
         margin-inline: auto;
         display: flex;
         flex-flow: wrap;
-        border-bottom: map-get($map: $color, $key: 'gy') solid ($px - 499);
         border-right: none;
 
         .div__redes {
@@ -2542,7 +2683,6 @@
         "redes legal";
 
       .footer__addrs {
-        border-right: map-get($map: $color, $key: 'gy') solid ($px - 499);
         height: $ptj;
       }
 
@@ -2551,7 +2691,6 @@
         height: $ptj;
         padding: ($px - 480);
         display: flex;
-        border-bottom: none;
 
         .div__redes {
           width: $ptj;
@@ -2559,10 +2698,8 @@
       }
 
       .footer__nav {
-        grid-area: fnav;
         width: $ptj;
         height: $ptj;
-        border: none;
         padding: ($px - 480);
 
         ul {
@@ -2572,11 +2709,9 @@
       }
 
       .footer__legal {
-        grid-area: legal;
         width: $ptj;
         height: $ptj;
         padding: ($px - 480);
-        border: none;
       }
     }
 
@@ -2656,75 +2791,5 @@
       }
     }
   }
-}
 
-.g-body {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas:
-    'gnav gnav gnav'
-    'gmain gmain gaside'
-    'gmain gmain gaside'
-    'gfoot gfoot gfoot';
-  background-color: map-get($map: $bg, $key: 'white-e');
-
-  .g-nav {
-    grid-area: gnav;
-    height: auto;
-  }
-
-  .g-main {
-    grid-area: gmain;
-    height: auto;
-  }
-
-  .g-aside {
-    grid-area: gaside;
-    height: auto;
-    background-color: map-get($map: $bg, $key: 'black-e');
-
-    .aside {
-      @include flex-column (column, center);
-      justify-content: center;
-      height: $ptj;
-
-      div {
-        background-color: white;
-        margin-block: auto;
-        width: ($ptj - 2);
-        margin-inline: auto;
-        border-radius: ($px - 420);
-        height: ($ptj - 70);
-
-        p {
-          font-size: ($txtg - .5);
-        }
-      }
-    }
-  }
-
-  .g-footer {
-    grid-area: gfoot;
-    height: auto;
-    background-color: map-get($map: $bg, $key: 'black-e');
-
-    h4 {
-      color: map-get($map: $color, $key: 'red')
-    }
-
-    .footer__addrs {
-      .div__span {
-        span {
-          color: map-get($map: $color, $key: 'red');
-          text-shadow: ($px - 499) ($px - 499) map-get($map: $color, $key: 'red-trans');
-          -webkit-text-shadow: ($px - 499) ($px - 499) map-get($map: $color, $key: 'red-trans');
-        }
-      }
-
-      address {
-        color: map-get($map: $color, $key: 'red');
-      }
-    }
-  }
 }
