@@ -1884,14 +1884,16 @@
         }
 
         .button__error {
-          width: $ptj;
-          @include flex(center, center);
+          width: ($ptj - 50);
+          @include flex-column(column, center);
+          justify-content: center;
 
           a {
-            width: auto;
+            width: $ptj;
+            align-self: center;
 
             button {
-              width: ($px - 300);
+              width: $ptj;
               height: ($px - 470);
               border-radius: ($px - 490);
               border: none;
@@ -1917,7 +1919,35 @@
                 }
               }
             }
+
+            .b__error {
+              width: $ptj;
+              margin-block: ($px - 498);
+
+              span {
+                font-size: ($txtg - .8);
+              }
+            }
           }
+
+          .s__error {
+            font-family: $titlefonts;
+            color: map-get($map: $color, $key: 'white');
+            font-size: ($txtg - .8);
+            align-self: center;
+            margin-block: ($px - 498);
+          }
+
+          div {
+            width: $ptj;
+            @include flex(space-around, center);
+            flex-wrap: wrap;
+
+            a {
+              width: ($ptj - 55);
+            }
+          }
+
         }
       }
     }
@@ -2202,9 +2232,7 @@
     align-self: center;
     @include flex (space-evenly, center);
     background: linear-gradient(to bottom, map-get($map:$bg, $key:'green-header-1'), map-get($map:$bg, $key:'green-header-2'));
-    box-shadow: ($px - 498) ($px - 498) map-get($map: $color, $key: 'green-shadow');
-    -webkit-box-shadow: ($px - 497) ($px - 497) map-get($map: $color, $key: 'green-shadow');
-    border-radius: ($px - 480);
+    border-radius: ($px - 495);
 
     .rsl__div2 {
       @include flex-column (column, center);
@@ -2212,9 +2240,7 @@
       padding: ($px - 490);
       margin-block: ($px - 490);
       background: linear-gradient(to bottom, map-get($map:$bg, $key:'green-rsl-1'), map-get($map:$bg, $key:'green-rsl-2'));
-      border-radius: ($px - 480);
-      box-shadow: ($px - 497) ($px - 497) map-get($map: $color, $key: 'black');
-      -webkit-box-shadow: ($px - 497) ($px - 497) map-get($map: $color, $key: 'black');
+      border-radius: ($px - 495);
 
       .rsl__div3 {
         @include flex(space-between, center);

@@ -1170,14 +1170,16 @@ span {
           color: #f6dada;
           text-align: justify; }
         .body .error article .txt__error .button__error {
-          width: 100%;
+          width: 50%;
           display: flex;
-          justify-content: center;
-          align-self: center; }
+          flex-direction: column;
+          align-self: center;
+          justify-content: center; }
           .body .error article .txt__error .button__error a {
-            width: auto; }
+            width: 100%;
+            align-self: center; }
             .body .error article .txt__error .button__error a button {
-              width: 200px;
+              width: 100%;
               height: 30px;
               border-radius: 10px;
               border: none;
@@ -1196,6 +1198,25 @@ span {
                 .body .error article .txt__error .button__error a button span:hover {
                   color: #f6dada;
                   transition: 300ms; }
+            .body .error article .txt__error .button__error a .b__error {
+              width: 100%;
+              margin-block: 2px; }
+              .body .error article .txt__error .button__error a .b__error span {
+                font-size: 1.2rem; }
+          .body .error article .txt__error .button__error .s__error {
+            font-family: "Bungee", cursive;
+            color: #f6dada;
+            font-size: 1.2rem;
+            align-self: center;
+            margin-block: 2px; }
+          .body .error article .txt__error .button__error div {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-self: center;
+            flex-wrap: wrap; }
+            .body .error article .txt__error .button__error div a {
+              width: 45%; }
     @media (max-width: 1111px) {
       .body .error {
         width: 70%; } }
@@ -1333,9 +1354,7 @@ span {
     justify-content: space-evenly;
     align-self: center;
     background: linear-gradient(to bottom, #02c8029f, #074f07a9);
-    box-shadow: 2px 2px #276608;
-    -webkit-box-shadow: 3px 3px #276608;
-    border-radius: 20px; }
+    border-radius: 5px; }
     .body .rsl__div .rsl__div2 {
       display: flex;
       flex-direction: column;
@@ -1344,9 +1363,7 @@ span {
       padding: 10px;
       margin-block: 10px;
       background: linear-gradient(to bottom, #22c622, #288b28);
-      border-radius: 20px;
-      box-shadow: 3px 3px #060606;
-      -webkit-box-shadow: 3px 3px #060606; }
+      border-radius: 5px; }
       .body .rsl__div .rsl__div2 .rsl__div3 {
         display: flex;
         justify-content: space-between;
