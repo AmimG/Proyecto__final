@@ -63,7 +63,7 @@
         align-self: center;
 
         img {
-          width: $ptj;
+          width: ($px - 468);
         }
       }
     }
@@ -93,6 +93,10 @@
       .dis-2 {
         a {
           margin-inline: ($px - 490);
+
+          img {
+            width: ($px - 470);
+          }
         }
       }
     }
@@ -101,6 +105,10 @@
       .dis-2 {
         a {
           margin-inline: ($px - 495);
+
+          img {
+            width: ($px - 475);
+          }
         }
       }
     }
@@ -111,7 +119,6 @@
           font-size: ($txtg - .6);
         }
       }
-
     }
   }
 
@@ -1004,6 +1011,38 @@
         }
       }
 
+      @media (max-width: 768px) {
+        width: ($ptj - 10);
+        @include flex-column(column, center);
+
+        .div__ner {
+          @include flex-column(column, center);
+
+          .div__cont {
+            @include flex(space-between, center);
+            width: $ptj;
+            padding-block: ($px - 490);
+            border-bottom: map-get($map: $color, $key: 'white-trans') ($px - 499.99) solid;
+
+            .div__img {
+              max-width: ($ptj - 45);
+            }
+
+            .a {
+              width: ($ptj - 55);
+              min-height: $ptj;
+              margin-inline: ($px - 495);
+              margin-top: ($px - 500);
+              align-self: center;
+
+              a {
+                font-size: ($txtg - .2);
+              }
+            }
+          }
+        }
+      }
+
       @media (max-width: 730px) {
         .div__ner {
           .a {
@@ -1026,34 +1065,6 @@
 
       @media (max-width: 585px) {
         width: $ptj;
-        @include flex-column(column, center);
-
-        .div__ner {
-          @include flex-column(column, center);
-
-          .div__cont {
-            @include flex(space-between, center);
-            width: $ptj;
-            padding-block: ($px - 490);
-            border-bottom: map-get($map: $color, $key: 'white-trans') ($px - 499.99) solid;
-
-            .div__img {
-              max-width: ($ptj - 45);
-            }
-
-            .a {
-              width: ($ptj - 55);
-              height: auto;
-              margin-inline: ($px - 495);
-              margin-top: ($px - 500);
-              align-self: center;
-
-              a {
-                font-size: ($txtg - .2);
-              }
-            }
-          }
-        }
       }
 
       @media (max-width: 500px) {
@@ -1405,11 +1416,12 @@
               @include flex-column(column, center);
 
               span {
-                text-align: center;
+                text-align: justify;
+                font-size: ($txtg - .5);
               }
 
               p {
-                text-align: center;
+                text-align: justify;
                 font-size: ($txtg - .2);
               }
             }
@@ -2198,12 +2210,6 @@
 
     @media (max-width: 991px) {
       .rsl__ttl {
-        width: ($ptj - 5);
-      }
-    }
-
-    @media (max-width: 768px) {
-      .rsl__ttl {
         width: ($ptj - 50);
       }
     }
@@ -2266,11 +2272,6 @@
     }
 
     @media (max-width: 991px) {
-      width: ($ptj - 5);
-    }
-
-
-    @media (max-width: 768px) {
       width: ($ptj - 50);
       @include flex-column (column, center);
 
@@ -2331,8 +2332,7 @@
         width: ($ptj - 55);
         display: flex;
         border-radius: ($px - 480);
-        box-shadow: ($px - 497) ($px - 497) map-get($map: $color, $key: 'gy');
-        -webkit-box-shadow: ($px - 497) ($px - 497) map-get($map: $color, $key: 'gy');
+        border: solid ($px - 499) map-get($map: $color, $key: 'gy');
       }
 
       img {
@@ -2570,6 +2570,7 @@
       ul {
         margin-top: ($px - 475);
         padding-left: ($px - 500);
+        margin-bottom: ($px - 500);
 
         li {
           list-style: none;
@@ -2687,7 +2688,6 @@
         display: flex;
 
         div {
-          margin-bottom: auto;
           max-width: ($px - 300);
 
           span {
@@ -2700,27 +2700,33 @@
     @media (max-width: 733px) {
       padding-top: ($px - 500);
       padding-bottom: ($px - 500);
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "addrs fnav"
-        "redes legal";
+      @include flex-column(row, center);
+      flex-wrap: wrap;
+
+      h4 {
+        margin-bottom: ($px - 480);
+      }
 
       .footer__addrs {
+        width: ($ptj - 50);
         height: $ptj;
+        min-height: ($px - 300);
       }
 
       .footer__redes {
-        width: $ptj;
+        width: ($ptj - 50);
         height: $ptj;
         padding: ($px - 480);
         display: flex;
 
         .div__redes {
           width: $ptj;
+          margin-bottom: auto;
         }
       }
 
       .footer__nav {
-        width: $ptj;
+        width: ($ptj - 50);
         height: $ptj;
         padding: ($px - 480);
 
@@ -2731,9 +2737,13 @@
       }
 
       .footer__legal {
-        width: $ptj;
+        width: ($ptj - 50);
         height: $ptj;
         padding: ($px - 480);
+
+        div {
+          margin-bottom: auto;
+        }
       }
     }
 
@@ -2751,6 +2761,7 @@
       .footer__addrs {
         padding: ($px - 495);
         border: none;
+        min-height: auto;
 
         address {
           display: none;

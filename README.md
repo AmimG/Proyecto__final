@@ -1,22 +1,17 @@
 # Proyecto final
 
-Sitio web relacionado con el fútbol, boxeo, tenis y los esports.
+Proyecto relacionado con una web de noticias de fútbol, boxeo, tenis y los esports. En total son 35 HTML.
 
-Aplicación de:
+Animaciones:
+Generadas a partir de wow, unicamente en el index.
 
-- HTML
-- CSS
-- Bootstrap
-- Wow
-- SASS
-- SEO standar
+Imagenes:
+Todas están por nube.
 
-Footer:
-
-Los links del footer, redireccionan a la página de Error 404.
+Error 404:
+Los links del footer, un link del index y los formularios redireccionan a error 404.
 
 Inspiraciones:
-
 https://www.as.com/
 https://www.marca.com/
 https://onefootball.com/es/

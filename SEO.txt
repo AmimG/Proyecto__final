@@ -3,56 +3,179 @@ General
 - Meta robots: index y follow
 - H1: usado en la nav como CENTRAL SPORTS
 
-Index
-- Meta description: se agregó el siguiente parrafo "Central Sports es un diario deportivo digital, enfocado en el fútbol, boxeo y tenis. Conocerás las noticias más actualizadas del deporte"
-- Meta keywords: se agregarón las siguientes palabras claves "deportes, diario, diario deportivo, digital, diario digital, futbol, fútbol, tenis, boxeo, madrid, real madrid, atletico de madrid, barcelona, benzema, lewandoski"
-- Title: Central Sports | Noticias deportivas
+index:
+- Meta description: se agregó el siguiente parrafo "Central Sports es un diario deportivo digital, enfocado en dar la información al día y más relevante del fútbol, boxeo, tenis y los esports. Conocerás las noticias más actualizadas del deporte"
+- Meta keywords: se agregarón las siguientes palabras claves "deportes, diario, diario deportivo, digital, diario digital, futbol, fútbol, tenis, boxeo, esports, deportes electrónicos, madrid, real madrid, atletico de madrid, barcelona, benzema, lewandoski, messi, cr7, cristiano ronaldo, koi, ibai"
+- Title: Central Sports | Diario online deportivo
 
-Resultados
-- Meta description: se agregó el siguiente parrafo "Resutados de los eventos deportivos, enfocado en el fútbol, boxeo y tenis"
-- Meta keywords: se agregarón las siguientes palabras claves "resultados, resultados del día, laliga, la liga, liga española, liga italiana, serie a, liga alemana, liga de alemania, bundesliga, liga de inglaterra, liga inglesa, premier league, liga francesa, liga de francia, ligue one, ligue 1, liga one, liga uno, real madrid, barcelona, atletico de madrid, juve, juventus, inter, inter de milan, milan, bayern, bayer, bayern munchen, dortmund, borusia dortmund, borussia dortmund, borusia, manchester, city, united, machester city, manchester united, man u, man city, liverpool, psg, paris saint germain, monaco, marsella"
-- Title: Resultados | Central Sports
-
-Perfil
+perfil:
 - Meta description: se agregó el siguiente parrafo "Iniciar sesión en Central Sports, para estar al día de las noticias más importantes del mundo del deporte"
 - Meta keywords: se agregarón las siguientes palabras claves "iniciar, inciar sesión, iniciar sesion"
 - Title: Iniciar sesión | Central Sports
 
-Nosotros
+nosotros:
 - Meta description: se agregó el siguiente parrafo "Conoce el nacimiento de Central Sports, desde sus origenes hasta su misión y visión"
 - Meta keywords: se agregarón las siguientes palabras claves "nosotros, sobre nosotros, about us, us, informacion, información, nacimiento, informacion de central sports, informacion central sports, sobre central sports, about central sports, mision, misión, vision, visión"
 - Title: About Us | Central Sports
 
-Contacto
+contacto:
 - Meta description: se agregó el siguiente parrafo "Contacta con Central Sports, envianos rumores, estadisticas, noticias. Contacto por trabajo, mejoras, bugs"
 - Meta keywords: se agregarón las siguientes palabras claves "contacto, correo, gmail, outlook, quejas, bugs"
 - Title: Contacto | Central Sports
 
-Tenis
+fútbol:
+- Meta description: se agregó el siguiente parrafo "Sección de Futbol de Central Sports, en esta damos la información más relevante del fútbol. Noticias sobre el mercado de fichajes, fútbol femenino, las Ligas, Cristiano Ronaldo, Messi, Mbappe, Neymar, lewandoski, el Real Madrid, el Barcelona y más"
+- Meta keywords: se agregarón las siguientes palabras claves "deportes, diario, diario deportivo, digital, diario digital, futbol, fútbol, madrid, real madrid, atletico de madrid, barcelona, benzema, lewandoski, cristiano, neymar, mbappe, champions, europa league, uefa, conference legaue, la liga, premier league, bundesliga, seria a"
+- Title: Fútbol | Central Sports
+
+alexia-putellas:
+- Meta description: se agregó el siguiente parrafo "Eurocopa femenina 2022, Alexia Putellas, jugadora profesional del Barcelona FC femenino y de la selección española, se rompe el cruzado y se pierde la Eurocopa"
+- Meta keywords: se agregarón las siguientes palabras claves "futbol femenino, fútbol, alexia, putellas, lesión, eurocopa, eurocopa femenina, selección española, españa"
+- Title: Alexia Putellas: se rompe el cruzado | Fútbol
+
+carlo-ancelotti-real-madrid:
+- Meta description: se agregó el siguiente parrafo "Carlo Ancelotti ofreció a los medios internacionales una rueda de prensa previa al partido ante el América en la gira que el Real Madrid realizará por el continente americano en los próximos días. Entre otras cosas, el técnico italiano, que estuvo acompañado de Thibaut Courtois, dejó entrever que utilizará esta temporada a Eden Hazard como falso nueve y que el club no tiene intención de incorporar más jugadores en este mercado."
+- Meta keywords: se agregarón las siguientes palabras claves "futbol, fútbol, real madrid, madrid, fichajes, rueda de prensa, ancelotti, carlo ancelotti"
+- Title: Real Madrid: Carlo Ancelotti "No vamos a fichar a más nadie" | Fútbol
+
+de-jong-barcelona:
+- Meta description: se agregó el siguiente parrafo "El FC Barcelona, le pide a frankie de jong que acepte la oferta del manchester united para poder liberar masa salarial"
+- Meta keywords: se agregarón las siguientes palabras claves "futbol, fútbol, jong, frankie, frankie de jong, barcelona, fichajes, la liga, liga española"
+- Title: Frankie de Jong: Una ayuda al Barcelona | Fútbol
+
+espana-portugal-mundial:
+- Meta description: se agregó el siguiente parrafo "La Real Federación Española de Fútbol (RFEF) y el Gobierno de España han mantenido este jueves una reunión en la Ciudad del Fútbol de Las Rozas junto a representantes de las comunidades autónomas, ayuntamientos y clubes interesados en ser sede en la candidatura ibérica para el Mundial de 2030"
+- Meta keywords: se agregarón las siguientes palabras claves "futbol, fútbol, españa, espana, portugal, estadios, mundial, mundial 2030, camp nou, santiago bernabeu"
+- Title: España juntó a porugal postulan sus sedes para el Mundial 2030 | Fútbol
+
+sadio-mane:
+- Meta description: se agregó el siguiente parrafo "Sadio Mané, el nuevo fichaje del Bayern de Munich: cuánto dinero cuesta, cuántos años de contrato firma, cómo y de qué juega, cuánto cobrará por salario y qué dorsal usará"
+- Meta keywords: se agregarón las siguientes palabras claves "futbol, fútbol, bayern, mane, sadio, alemania, bundesliga, liga alemana, fichajes"
+- Title: Sadio Mané: La nueva estrella del Bayern | Fútbol
+
+paulo-dybala:
+- Meta description: se agregó el siguiente parrafo "Paulo Dybala, nuevo fichaje estrella de la AS Roma, anuncia su llegada tras su salida de la Juventus como agente libre."
+- Meta keywords: se agregarón las siguientes palabras claves "futbol, fútbol, AS Roma, Serie A, Paulo Dybala, Dybala, fichajes, mercado de fichajes"
+- Title: Dybala firma tres años por la AS Roma | Fútbol
+
+isco-real-madrid:
+- Meta description: se agregó el siguiente parrafo "A Isco Alarcón lo quieren Lopetegui y Pellegrini. Él prefiere Champions. En el Sevilla, aún no se deciden con su fichaje."
+- Meta keywords: se agregarón las siguientes palabras claves "futbol, fútbol, isco, isco alarcon, real madrid, betis, sevilla, la liga, laliga, liga española, españa"
+- Title: Isco sacrificaría un dineral al quedarse en la Liga Española | Fútbol
+
+eriksen:
+- Meta description: se agregó el siguiente parrafo "Christian Eriksen, al Manchester United un año después del paro cardíaco. Erik ten Hag, el técnico que le acogió en el Ajax durante su recuperación, promueve el contrato alentado por la negativa de Frenkie de Jong y la estrechez financiera que aqueja al club"
+- Meta keywords: se agregarón las siguientes palabras claves "futbol, fútbol, christian eriksen, eriksen, manchester united, fichajes premier league, liga inglesa"
+- Title: Christian Eriksen: nuevo fichaje del manchester united | Fútbol
+
+diego-chavez:
+- Meta description: se agregó el siguiente parrafo "El Carabobo FC y diego chavez anuncia su regreso de manera epica, comenzará la pretemporada en agosto e iniciará la nueva temporada con el equipo venezolano"
+- Meta keywords: se agregarón las siguientes palabras claves "futbol, fútbol, venezuela, diego chavez, chavez, fichaes, primera división, futbol venezolano"
+- Title: Diego Chavéz: vuelve a las canchas con el Carabobo FC | Fútbol
+
+nathan-ake:
+- Meta description: se agregó el siguiente parrafo "El manchester city, le cierra la puerta a su central Nathan Aké, ante el interés del Chelsea"
+- Meta keywords: se agregarón las siguientes palabras claves "futbol, fútbol, aké, nathan, nathan ake, manchester city, fichajes premier league, liga inglesa,"
+- Title: Nathan Aké: El city dice que no | Fútbol
+
+tenis
 - Meta description: se agregó el siguiente parrafo "Sección de Tenis de Central Sports, en esta damos la información más relevante del Tenis. Noticias sobre Djokovic, Nadal, Federer, los torneos de ATP 250, ATP 500, ATP 100, Grand Slams y más"
 - Meta keywords: se agregarón las siguientes palabras claves "deportes, diario, diario deportivo, digital, diario digital, tenis, nadal, federer, djkovic, roland garros, us open, wimbledon, australia open"
 - Title: Tenis | Central Sports
 
-Fútbol
-- Meta description: se agregó el siguiente parrafo "Contacta con Central Sports, envianos rumores, estadisticas, noticias. Contacto por trabajo, mejoras, bugs"
-- Meta keywords: se agregarón las siguientes palabras claves "contacto, correo, gmail, outlook, quejas, bugs"
-- Title: Contacto | Central Sports
+carreno-atp-250:
+- Meta description: se agregó el siguiente parrafo "Pablo Carreño ha conseguido clasificarse para las semifinales del ATP 250 de Bastad (Suecia), uno de los torneos clásicos sobre tierra batida posterior a Roland Garros."
+- Meta keywords: se agregarón las siguientes palabras claves "tenis, atp 250, carreño, Schwartzman"
+- Title: Pablo carreño a la semifinal del ATP 250 Bastad | Tenis
 
-Boxeo
+novak-djokovic-wimbledon:
+- Meta description: se agregó el siguiente parrafo "Novak Djokovic, y una epicidad más en su torneo preferido el Grand Slam de Wimbledon"
+- Meta keywords: se agregarón las siguientes palabras claves "deportes, diario, diario deportivo, digital, diario digital, tenis, novak, djkovic, wimbledon, grand slam"
+- Title: Novak Djokovic: Una epicidad en Wimbledon | Tenis
+
+nadal:
+- Meta description: se agregó el siguiente parrafo "El vídeo viral del discurso de Rafa Nadal hablando del trabajo en equipo que es una nueva lección de valores, humildad y compañerismo."
+- Meta keywords: se agregarón las siguientes palabras claves "tenis, nadal, discurso, equipo, valores, humildad"
+- Title: Rafael Nadal: Una lección de humildad | Tenis
+
+kyrgios:
+- Meta description: se agregó el siguiente parrafo "Nick Kyrgios celebró su participación en la semi-final del Torneo de Wimbledon, que jugará contra Novak Djokovic, compartiendo en su cuenta de Instagram una foto."
+- Meta keywords: se agregarón las siguientes palabras claves "tenis, Kyrgios, Djokovic, Wimbledon"
+- Title: Nick Kyrgios: comparte su antes y después | Tenis
+
+sharapova:
+- Meta description: se agregó el siguiente parrafo "María Sharapova anuncia que está embarazada, a través de una publicación de instagram"
+- Meta keywords: se agregarón las siguientes palabras claves "tenis, sharapova, embarazo, hijo"
+- Title: Maria Sharapova: El anuncio de su primer hijo | Tenis
+
+boxeo
 - Meta description: se agregó el siguiente parrafo "Sección de Boxeo de Central Sports, en esta damos la información más relevante del boxeo. Noticias de Canelos Alvarez, Maywhether, Pacquiao, fury, Foreman, boxeo femenino, peso ligero, peso pluma, peso mosca, peso gallo, peso welter, peso medio, peso pesado"
 - Meta keywords: se agregarón las siguientes palabras claves "deportes, diario, diario deportivo, digital, diario digital, boxeo, maywhether, canelo, Golovkin, golovkin, boxeo femenino, ali, paquiao, ryan"
-- Title: Boxeo | Central Sport
+- Title: Boxeo | Central Sports
 
-Error 404
-- Meta description: se agregó el siguiente parrafo "Pagina de Error para links o paginas que no existen o, no están terminadas"
+canelo-vs-golovkin:
+- Meta description: se agregó el siguiente parrafo "Canelo Alvaréz vs Gennady Golovkin, una rivalidad que ha crecido, esta será la trilogía en cuanto a peleas"
+- Meta keywords: se agregarón las siguientes palabras claves "boxeo, canelo alvaréz, ggg, canelo, golovkin, trilogía"
+- Title: Canelo Alvaréz vs Gennady Golovkin 3 | Boxeo
+
+foreman:
+- Meta description: se agregó el siguiente parrafo "El legendario ex boxeador George Foreman aseguró que dos mujeres quieren extorsionarlo por presunto abuso sexual, pero dejó en claro que es inocente."
+- Meta keywords: se agregarón las siguientes palabras claves "boxeo, foreman, george foreman"
+- Title: George Foreman acusa que lo quieren extorsionar por abuso sexual | Boxeo
+
+box-fem:
+- Meta description: se agregó el siguiente parrafo "Mikaela Mayer enfrentando a Alycia Baumgardner como coestelar en la cartelera de Claressa Shields-Savannah Marshall es una oportunidad para que el boxeo femenino vuelva al gran escenario."
+- Meta keywords: se agregarón las siguientes palabras claves "Boxeo, boxeo femenino, mayer, Baumgarder, Shields-Savannah, Marshall"
+- Title: Mayer-Baumgardner y Shields-Marshall, dos peleas para seguir impulsando el boxeo femenino | Boxeo
+
+floyd:
+- Meta description: se agregó el siguiente parrafo "Floyd Mayweather ha señalado que volvería a pelear si la cantidad que le ofrecieran superase los 200 millones de dólares."
+- Meta keywords: se agregarón las siguientes palabras claves "boxeo, floyd, Mayweather"
+- Title: Mayweather estaría dispuesto a regresar al ring | Boxeo
+
+esports:
+- Meta description: se agregó el siguiente parrafo "Sección de deportes electrónicos, en esta damos la información más relevante de los esports. Así como todos los resulados en valorant, league of legends, y las noticias de todos los influencers en el mundo"
+- Meta keywords: se agregarón las siguientes palabras claves "deportes electrónicos diario, diario deportivo, digital, diario digital esports, ibai, auronplay, rubius, karmaland, illojuan, tortillaland, lol, league of legends, lec, rl, valorant"
+- Title: eSports | Central Sports
+
+ibai-llanos-fotocasa:
+- Meta description: se agregó el siguiente parrafo "Ibai LLanos, el influencer y streamer se ha aliado con Fotocasa para convertirse en agente inmobiliario y mostrar domicilios en vídeo."
+- Meta keywords: se agregarón las siguientes palabras claves "bai, inmuebles, fotocasa"
+- Title: Ibai Llanos y su alianza con Fotocasa | eSports
+
+koi-lec:
+- Meta description: se agregó el siguiente parrafo "Se ha hablado mucho acerca de la llegada de KOI a la LEC, sin embargo Ibai cree que todavía no es el momento y pide paciencia."
+- Meta keywords: se agregarón las siguientes palabras claves "koi, lec, ibai, espors, lol"
+- Title: ¿KOI en la LEC? Ibai no lo ve viable por ahora | eSports
+
+phonix-valorant:
+- Meta description: se agregó el siguiente parrafo "FunPlus Phoenix ha superado por 2-0 a OpTic Gaming para llegar a la final del Masters de Copenhague que jugará contra Paper Rex."
+- Meta keywords: se agregarón las siguientes palabras claves "Valorant, riot, FunPlus Phoenix."
+- Title: FunPlus Phoenix llega a la final del Masters de Copenhague | eSports
+
+faker:
+- Meta description: se agregó el siguiente parrafo "El HLE vs T1 de la jornada número 8 de la LCK se alargó más de la cuenta por vario bugs y problemas técnicos en las partidas, y las decisiones tomadas han molestado y mucho al midlaner de T1."
+- Meta keywords: se agregarón las siguientes palabras claves "faker, lol, lck, arbitros"
+- Title: Faker estalla contra la LCK y sus árbitros | eSports
+
+rubius-x:
+- Meta description: se agregó el siguiente parrafo "Es el año en el que muchos de nuestros streamers más famosos, han cumplido 10 años desde que subieran su primer vídeo a Youtube."
+- Meta keywords: se agregarón las siguientes palabras claves "influencers, gaming, rubius, streamer, youtube"
+- Title: Rubius X, cuándo se estrena y dónde ver el documental de Rubius | eSports
+
+chamber-valorant:
+- Meta description: se agregó el siguiente parrafo "RIOT ha hecho oficial que Chamber recibirá un nerf muy pronto en Valorant, para que el agente no tenga una tasa de selección tan grande."
+- Meta keywords: se agregarón las siguientes palabras claves "Riot, Valorant, nerft, chamber"
+- Title: RIOT confirma un nerf para Chamber | eSports
+
+resultados
+- Meta description: se agregó el siguiente parrafo "Resutados de los eventos deportivos, enfocado en el fútbol, boxeo y tenis"
+- Meta keywords: se agregarón las siguientes palabras claves "resultados, resultados del día, resultados de tenis, resultados de boxeo, resultados de futbol"
+- Title: Resultados | Central Sports
+
+error-404
+- Meta description: se agregó el siguiente parrafo "Página de Error para links o paginas que no existen o, no están terminadas"
 - Meta keywords: se agregarón las siguientes palabras claves "error, error 404"
 - Title: Error 404 | Central Sports
-
-Novak Djokovic Wimbledon
-- Meta description: se agregó el siguiente parrafo "Novak Djokovic y una epicidad más en su torneo preferido el Grand Slam de Wimbledon"
-- Meta keywords: se agregarón las siguientes palabras claves "deportes, diario, diario deportivo, digital, diario digital, tenis, novak, djkovic, wimbledon"
-- Title: Novak Djokovic y una epicidad en Wimbledon | Central Sports
-
-
 
 
